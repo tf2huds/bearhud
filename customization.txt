@@ -1,0 +1,31 @@
+###RESOLUTION###
+If you play on 4:3 aspect ratio, install bearhud_final first then copy the resource folder within 4x3 and paste it onto the resource folder in bearhud_final
+If you play on 16:10 aspect ratio, install bearhud_final first then copy the resource folder within 16x10 and paste it onto the resource folder in bearhud_final
+
+###CROSSHAIR###
+To enable custom crosshairs find hudcrosshairs.res in /bearhud_final/scripts/, pick the crosshair of your liking and change the visible value to 1
+
+###SCOREBOARD###
+To enable 32p scoreboard (default 24p) find scoreboard_32.res in /bearhud_final/resource/ui/ and remove _32 from the name
+Thanks elso for the edit!
+
+###VIEWMODEL###
+To enable transparent viewmodels find "TransparentViewmodelMask" at the top of hudlayout.res located in /bearhud_final/scripts/ and change the visible/enabled values to 1
+This requires your game run on DirectX9 and the following settings. I recommend putting these in your autoexec.cfg:
+
+// Transparent ViewModels
+mat_motion_blur_enabled 1
+mat_motion_blur_strength 0
+mat_disable_bloom 1
+mat_hdr_level 0
+mat_colcorrection_disableentities 1
+mat_colorcorrection 0
+// Transparent ViewModels
+
+###DAMAGE NUMBERS###
+As of March 28th damage numbers color resets to red for most people on startup due to the new color slider in advanced settings
+Add this to your autoexec.cfg to prevent this from happening:
+
+hud_combattext_red 255
+hud_combattext_green 255
+hud_combattext_blue 255
